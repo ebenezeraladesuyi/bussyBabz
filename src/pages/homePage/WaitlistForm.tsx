@@ -112,7 +112,7 @@ const WaitlistForm = () => {
                                 <DatasIsaLoading />
                             </div>
                          ) : (
-                            <button type="submit" className="w-full text-[#150E28] hover:text-white hover:bg-transparent hover:border-white hover:border-[1px]  transition-all duration-300 ease-in-out font-bold">Register</button>
+                            <button type="submit" className="w-full text-[#150E28] hover:text-white hover:bg-transparent hover:border-white hover:border-[1px]  transition-all duration-300 ease-in-out font-bold bg-white">Register</button>
                         )}
 
                         {error && <p className="text-[7px]">{error}</p>}
