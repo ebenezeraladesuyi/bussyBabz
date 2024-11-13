@@ -23,7 +23,8 @@ const ThankYou = () => {
                 <button className="p-2 px-5 bg-orange-400 text-white rounded-[50px] text-[13px] md:text-[16px] font-bold animate-pulse">See Live Poll Results</button>
             </NavLink>
 
-            <p className="text-white  text-center text-[13px] md:text-[16px] lg:text-[20px] mt-[20px]">
+            <p className="text-white  text-center text-[13px] md:text-[16px] lg:text-[20px] mt-[20px] flex flex-col gap-1">
+                <span>Note: This Poll does not in anyway have influence over the General Election.</span> <br />
                 Go out and vote on November 16th, 2024.. Remember, Your Vote is Your Power..
             </p>
 

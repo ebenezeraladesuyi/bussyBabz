@@ -52,7 +52,7 @@ const Header = () => {
             <NavLink to='/'>
                 <div className='lg:hidde p-1 rounded-md shadow-m w-[110px md:w-[150px z-40 h- py-0'>
                     {/* <img className="w-full rounded-md" src={logo} alt="LyfeCare" /> */}
-                    <h5 className='text-black font-bold text-[15px] lg:text-[30px] animate-pulse bg-white shadow-md rounded-[30px] p-2 px-4'>ONDO DECIDES '24</h5>
+                    <h5 className='text-black font-bold text-[15px] lg:text-[30px] animate-pulse bg-white shadow-md rounded-[10px] p-2 px-4'>ONDO DECIDES '24</h5>
                 </div>
             </NavLink>
 
@@ -80,14 +80,14 @@ const Header = () => {
                     </NavLink> */}
 
                     {/* <Link offset={-100} smooth={true} duration={500} to="services"> */}
-                    {/* <NavLink 
-                        to='/blog'
-                        className={({isActive}) => `text-[#fff] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-blue-400' : ''}`}
+                    <NavLink 
+                        to='/result'
+                        className={({isActive}) => `text-[#fff] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-blue-400' : ''}`} 
                     >
-                        <ol>Blog</ol>
+                        <ol>Live Result</ol>
                     </NavLink>
 
-                    <NavLink 
+                    {/*<NavLink 
                         to='/about'
                         className={({isActive}) => `text-[#fff] hover:text-[#23a1db] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-blue-400' : ''}`}
                     >
@@ -153,12 +153,12 @@ const Header = () => {
                         </NavLink> */}
 
                         {/* <Link  offset={-100} smooth={true} duration={500} to="services"> */}
-                        {/* <NavLink 
-                            to='/blog'
+                        <NavLink 
+                            to='/result'
                             className={({isActive}) => ` text-white hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-blue-400' : ''}`}
                         >
-                            <ol>Blog</ol>
-                        </NavLink> */}
+                            <ol>Live Result</ol>
+                        </NavLink>
 
                         {/* <NavLink 
                             to='/about'

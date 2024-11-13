@@ -79,16 +79,16 @@ const AskMail2 = () => {
   };
 
   return (
-    <div className="w-full min-h-[130vh] md:h-[100vh] flex justify-center items-center bg-bg5 bg-cover bg-center overflow-hidden">
+    <div className="w-full h-[130vh] md:h-[100vh] flex justify-center items-center bg-bg5 bg-cover bg-center overflow-hidden">
       <div className="w-full h-[130vh] md:h-[100vh] top-0 bottom-0 absolute bg-black opacity-45"></div>
 
-      <div className="w-[90%] flex flex-col z-20 gap-4 items-center mt-[60px]">
+      <div className="w-[90%] flex flex-col z-20 gap-2 md:gap-3 items-center mt-[60px]">
         <h1 className="text-[18px] md:text-[22px] font-bold text-white text-center">
           Please, input your Email <br />
           <span className="text-[14px] md:text-[19px]">(Note: You can only vote once with an Email.)</span>
         </h1>
 
-        <form onSubmit={handleVote} className="w-full md:w-[60%] lg:w-[40%] flex flex-col gap-5 bg-whit p-7 rounded-lg">
+        <form onSubmit={handleVote} className="w-full md:w-[60%] lg:w-[40%] flex flex-col gap-3 md:gap-4 bg-whit p-7 rounded-lg">
           <input
             className="w-full h-[45px] md:h-[55px] rounded-[30px] text-[12px] md:text-[15px] px-[15px] outline-none border-orange-40 border-[1px]"
             type="email"
@@ -112,7 +112,7 @@ const AskMail2 = () => {
             <span className="text-[13px] md:text-[17px] font-bold text-white text-center mt-[15px]">Check the circle for your preferred candidate.</span>
 
             {candidates.map((candidate) => (
-              <div key={candidate._id} className="flex gap-3 items-center mb-[10px]">
+              <div key={candidate._id} className="flex gap-3 items-start md:items-center mb-[10px]">
                 <input
                   className="w-[20px] h-[20px] rounded-sm"
                   type="radio"

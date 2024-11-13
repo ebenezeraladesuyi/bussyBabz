@@ -10,14 +10,14 @@ const ElectionHero = () => {
       <div className="w-full h-full bg-black opacity-50 absolute"></div>
       <div className="w-[90%] flex flex-col items-center md:flex-row md:justify-between gap-5 mt-[50px] md:mt-0 z-20">
         <div className="font-bold text-orange-400 flex flex-col text-center md:text-left items-center md:items-start gap-">
-          <h1 className="text-[40px] md:text-[60px] lg:text-[80px]">ONDO</h1>
-          <h2 className="text-[40px] md:text-[60px] lg:text-[80px]">DECIDES '24</h2>
+          <h1 className="text-[40px] md:text-[60px] lg:text-[70px]">ONDO</h1>
+          <h2 className="text-[40px] md:text-[60px] lg:text-[70px]">DECIDES '24</h2>
           <h3 className="text-white w-[80%] md:text-[20px] text-[13px]">
             An Independent Online Poll for the Guber Election in Ondo State. 
           </h3>
 
           <NavLink to="/askmail2">
-            <button className="bg-orange-400 p-2 px-7 text-white font-bold rounded-[30px] animate-bounce mt-[20px] border-none outline-none hover:bg-[#063e60] ] transition-all duration-700 ease-in-out">
+            <button className="bg-orange-400 p-2 px-7 md:px-14 md:py-4 text-white font-bold rounded-[30px] animate-bounce mt-[20px] border-none outline-none hover:bg-[#063e60] ] transition-all duration-700 ease-in-out">
               Vote Now
             </button>
           </NavLink>
