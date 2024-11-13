@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import logo from "../../assets/logo/LyfeCare-logo.jpg";
+// import logo from "../../assets/logo/LyfeCare-logo.jpg";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import { NavLink } from 'react-router-dom';
@@ -50,9 +50,9 @@ const Header = () => {
 
             {/* <div className='flex justify-between items-center w-full'> */}
             <NavLink to='/'>
-                <div className='lg:hidde p-1 rounded-md shadow-m w-[110px] md:w-[150px] z-40 h- py-0'>
-                    <img className="w-full rounded-md" src={logo} alt="LyfeCare" />
-                    {/* <h5 className='text-black font-bold'>GAC</h5> */}
+                <div className='lg:hidde p-1 rounded-md shadow-m w-[110px md:w-[150px z-40 h- py-0'>
+                    {/* <img className="w-full rounded-md" src={logo} alt="LyfeCare" /> */}
+                    <h5 className='text-black font-bold text-[15px] lg:text-[30px] animate-pulse bg-white shadow-md rounded-[30px] p-2 px-4'>ONDO DECIDES '24</h5>
                 </div>
             </NavLink>
 
@@ -67,7 +67,7 @@ const Header = () => {
                 <li className="hidden lg:flex items-center gap-5 text-[15px] transition-all duration-500 ease-in-out text-white ">
                     <NavLink 
                         to="/"
-                        className={({isActive}) => `text-[#d7d6d6] hover:text-[#fff] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-blue-400' : ''}`}
+                        className={({isActive}) => `text-[#d7d6d6] hover:text-[#fff] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-orange-400' : ''}`}
                     >
                         <ol>Home</ol>
                     </NavLink>
@@ -100,11 +100,11 @@ const Header = () => {
                     </NavLink> */}
 
                     <NavLink 
-                        to="/joinwaitlist"
-                        className={({isActive}) => ` px-8 py-3 bg-[#23a1db] border-none hover:bg-[#063e60] hover:text-white  text-white font-semibold animate-puls ml-[50px] rounded-[60px] transition-all duration-300 ease-in-out ${isActive ? 'bg-blue-900' : ''}`}
+                        to="/askmail2"
+                        className={({isActive}) => ` px-8 py-3 bg-[#23a1db bg-orange-400 animate-pulse border-none hover:bg-[#063e60] hover:text-white  text-white font-semibold animate-puls ml-[50px] rounded-[60px] transition-all duration-300 ease-in-out ${isActive ? 'bg-blue-90 bg-orange-400' : ''}`}
                     >
                         <div className=''>
-                            Join Our Waitlist
+                            Vote Now
                         </div>
                     </NavLink>
                 </li>
@@ -117,7 +117,7 @@ const Header = () => {
                 // </div>
                 null
             :
-                <div className="lg:hidden text-[22px] cursor-pointer text-[#23a1db] shadow-md bg-white p-1 rounded-md ml-[6px] relative z-50" onClick={showDropdown}>
+                <div className="lg:hidden text-[22px] cursor-pointer text-[#23a1db text-orange-400 shadow-md bg-white p-1 rounded-md ml-[6px] relative z-50" onClick={showDropdown}>
                     <HiMenuAlt3 /> 
                 </div>
             }
@@ -140,7 +140,7 @@ const Header = () => {
                     {/* <li className="lg:flex items-center gap-5 text-[16px]"> */}
                         <NavLink 
                             to="/"
-                            className={({isActive}) => ` text-white hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-blue-400' : ''}`}
+                            className={({isActive}) => ` text-white hover:text-[#eedfb0] cursor-pointer font-semibold transition-all duration-300 ease-in-out ${isActive ? 'text-orange-400' : ''}`}
                         >
                             <ol className=''>Home</ol>
                         </NavLink>
@@ -173,11 +173,11 @@ const Header = () => {
                         </NavLink> */}
 
                         <NavLink 
-                            to="/joinwaitlist"
-                            className={({isActive}) => ` w-[150px] h-[45px] flex justify-center items-center bg-[#80c41c] border-none hover:bg-[#3d82b3] text-white font-semibold animate-pulse  rounded-[60px] ${isActive ? 'bg-blue-400' : ''}`}
+                            to="/askmail2"
+                            className={({isActive}) => ` w-[150px] h-[45px] flex justify-center items-center bg-[#80c41c bg-orange-400 border-none hover:bg-[#3d82b3] text-white font-semibold animate-pulse  rounded-[60px] ${isActive ? 'bg-blue-400' : ''}`}
                         >
                             <div className='text-white'>
-                                Join Our Waitlist
+                                Vote Now
                             </div>
                         </NavLink>
                     {/* </li> */}
